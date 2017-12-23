@@ -34,26 +34,26 @@
 		<%
 			List<Produto> produtoList = (List<Produto>) request.getAttribute("produtoList");
 		//for(Produto p : produtoList) {
-		%>
-			<c:forEach var="p" items="${produtoList}">
+		%> 
+			<c:forEach var="p" items="${produtoList}" varStatus="st">
 				<tr id="produto${p.id}">
 					<td>${p.nome}</td>
 					<td>${p.preco}</td>
 					<td>${p.descricao}</td>
-					<td>${p.DataInicioVenda}</td>
+					<td>${p.dataInicioVenda.time}</td>
+					<td>${st.count}</td>
+					<c:if test="${p.usado}">
+						<td>SIM</tr>
+					</c:if>
+					<c:if test="${not p.usado}">
+						<td>Não</td>
+					</c:if>
+					<td><a href="#" onclick="return removeProduto(${p.id})">Remover</a></td>
 				</tr>
-			</c:forEach>
-					<% if(p.isUsado()) { %>
-					<td>Sim</td>
-					<% } else { %>
-					<td>Não</td>
-					<% } %>
-					<td><a href="#" onclick="return removeProduto(<%= p.getId() %>)">Remover</a></td>
 				
-			
-		<%
-			//}
-		%>
+			</c:forEach>
+					
+
 	</table>
 	<a href="/produtos/produto/formulario">Adicionar um produto</a>
 </body>
