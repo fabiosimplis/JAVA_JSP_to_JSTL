@@ -3,6 +3,7 @@ PRODUTOS
 3 - Montando URLs
 - Mudando a forma de esolher a url.
 - Utilizaçao da url inline.
+- utilizando o set e o out para imprimir valores.
 --------------------------------------
 2 - Tomando Decisoes
 

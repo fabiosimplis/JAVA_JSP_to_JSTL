@@ -19,7 +19,9 @@
 		}
 	</script>
 
-	<h1>Produtos</h1>
+	<!--  <h1>Produtos</h1> -->
+	<c:set var="nome" value="Produtos" />
+	<h1> <c:out value="${nome}" /> </h1>
 	<div id="mensagem"></div>
 	<table width="100%">
 		<tr>
@@ -57,6 +59,7 @@
 				</tr>
 				
 			</c:forEach>
+			
 	</table>
 	<!-- <c:url value="/produto/formulario" var="urlAdicionar"/> -->
 	<a href="<c:url value='/produto/formulario'></c:url>">Adicionar um produto</a>
