@@ -2,7 +2,7 @@ PRODUTOS
 --------------------------------------
 4 - Formatando datas e numeros
 - Alteração da formatação da data.
-
+- Alterção no formato de exibir a data.
 --------------------------------------
 3 - Montando URLs
 - Mudando a forma de esolher a url.
