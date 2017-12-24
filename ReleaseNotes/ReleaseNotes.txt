@@ -1,5 +1,9 @@
 PRODUTOS
 --------------------------------------
+6 - Reutilizando paginas
+- Criando arquivo em comum
+- utilizando o <c:import
+--------------------------------------
 5 - Exibindo mensagens internacionalizaveis
 - Configuracao de mensagens.
 --------------------------------------

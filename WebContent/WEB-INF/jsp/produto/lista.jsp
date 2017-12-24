@@ -66,5 +66,8 @@
 	</table>
 	<!-- <c:url value="/produto/formulario" var="urlAdicionar"/> -->
 	<a href="<c:url value='/produto/formulario'></c:url>"> <fmt:message key="mensagem.novoProduto" /></a>
+	
+	<c:import url="../_comum/rodape.jsp"/>
+	
 </body>
 </html>
