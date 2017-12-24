@@ -1,5 +1,9 @@
 PRODUTOS
 --------------------------------------
+4 - Formatando datas e numeros
+- Alteração da formatação da data.
+
+--------------------------------------
 3 - Montando URLs
 - Mudando a forma de esolher a url.
 - Utilizaçao da url inline.

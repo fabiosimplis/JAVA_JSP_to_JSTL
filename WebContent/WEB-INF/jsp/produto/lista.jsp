@@ -4,8 +4,8 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> <!-- para formatar de datas e numeros -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%><!-- Para for, if e choose -->
 <head>
 <script type="text/javascript" src="<c:url value="/js/jquery.js"/>"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -44,7 +44,8 @@
 					<td>${p.nome}</td>
 					<td>${p.preco}</td>
 					<td>${p.descricao}</td>
-					<td>${p.dataInicioVenda.time}</td>				
+					<td><fmt:formatDate value="${p.dataInicioVenda.time}" pattern="dd/mm/yyyy" />
+					</td>				
 					
 					<c:choose>
 					  <c:when test="${p.usado}">
