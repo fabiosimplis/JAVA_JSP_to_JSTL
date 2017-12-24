@@ -1,5 +1,8 @@
 PRODUTOS
 --------------------------------------
+5 - Exibindo mensagens internacionalizaveis
+- Configuracao de mensagens.
+--------------------------------------
 4 - Formatando datas e numeros
 - Alteração da formatação da data.
 - Alterção no formato de exibir a data.
