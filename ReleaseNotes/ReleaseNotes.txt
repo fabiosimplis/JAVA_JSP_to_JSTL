@@ -3,3 +3,4 @@ PRODUTOS
 2 - Tomando Decisoes
 
 - Adicionando if else para verificar se produto removido ou não.
+- Mundado if para switch ou seja choose.

@@ -23,7 +23,8 @@
 	<div id="mensagem"></div>
 	<table width="100%">
 		<tr>
-			<td width="20%">Nome</td>
+			<td>Indice</td>
+			<td width="20%">Nome</td>			
 			<td>Preco</td>
 			<td>Descricao</td>
 			<td>Data de Inicio da Venda</td>
@@ -37,23 +38,25 @@
 		%> 
 			<c:forEach var="p" items="${produtoList}" varStatus="st">
 				<tr id="produto${p.id}">
+					<td>${st.count}</td>
 					<td>${p.nome}</td>
 					<td>${p.preco}</td>
 					<td>${p.descricao}</td>
-					<td>${p.dataInicioVenda.time}</td>
-					<td>${st.count}</td>
-					<c:if test="${p.usado}">
-						<td>SIM</tr>
-					</c:if>
-					<c:if test="${not p.usado}">
-						<td>Não</td>
-					</c:if>
+					<td>${p.dataInicioVenda.time}</td>				
+					
+					<c:choose>
+					  <c:when test="${p.usado}">
+					    <td>Sim</td>
+					  </c:when>
+					  <c:otherwise>
+					    <td>Não</td>
+					  </c:otherwise>
+					</c:choose>
+					
 					<td><a href="#" onclick="return removeProduto(${p.id})">Remover</a></td>
 				</tr>
 				
 			</c:forEach>
-					
-
 	</table>
 	<a href="/produtos/produto/formulario">Adicionar um produto</a>
 </body>
