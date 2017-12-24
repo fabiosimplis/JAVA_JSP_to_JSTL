@@ -3,7 +3,8 @@ PRODUTOS
 4 - Formatando datas e numeros
 - Alteração da formatação da data.
 - Alterção no formato de exibir a data.
-- Alteracao a formatacao da data
+- Alteracao a formatacao da data.
+_ Alteração para nome aprarecer em Maiúscula
 --------------------------------------
 3 - Montando URLs
 - Mudando a forma de esolher a url.
