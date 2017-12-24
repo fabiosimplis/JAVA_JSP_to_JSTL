@@ -1,5 +1,9 @@
 PRODUTOS
 --------------------------------------
+3 - Montando URLs
+- Mudando a forma de esolher a url.
+- Utilizaçao da url inline.
+--------------------------------------
 2 - Tomando Decisoes
 
 - Adicionando if else para verificar se produto removido ou não.
